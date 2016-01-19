@@ -1,0 +1,259 @@
+ /*------- General styles --------------------------------*/
+html{
+	font-family: orangejuice, serif;
+}
+
+body { 
+    background-image: url('background-02.png');
+ 	background-repeat: no-repeat; /* minimize size of background for phone size */
+   	height: 100vh;
+    background-size: cover;
+    margin: 0;
+}
+
+@font-face {
+  font-family: 'orangejuice';
+  src: url('font/orange-juice.eot'); /* IE9 Compat Modes */
+  src: url('font/orange-juice.eot?#iefix') format('embedded-opentype'), 
+       url('font/orange-juice.woff2') format('woff2'),
+       url('font/orange-juice.woff') format('woff'),
+       url('font/orange-juice.ttf')  format('truetype'),
+       url('font/orange-juice.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+ /*------- Dashboard --------------------------------*/
+
+.choose-weapon{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+}
+
+.wrapper{
+	margin: 0 auto;
+	min-width: 300px;
+	max-width: 900px;
+	height: 100vh;
+}
+
+
+.choose-weapon{
+	width: 335px;
+}
+
+h3{
+	text-align: center;
+}
+.master-flex{
+	/* flex properties */
+	display: -webkit-flex;
+	display:flex;
+
+	-webkit-flex-direction: row;
+ 	flex-direction: row;
+
+ 	-webkit-flex-wrap: wrap;
+ 	flex-wrap:wrap;
+
+ 	-webkit-justify-content: space-around;
+	justify-content: space-around;
+
+	-webkit-align-items: center;
+	align-content: center;
+}
+.menu-parent{
+	height: 60%;
+	max-width: 525px;
+	margin-top: 5px;
+
+	/* flex properties */
+	display: -webkit-flex;
+	display:flex;
+
+	-webkit-flex-direction: row;
+ 	flex-direction: row;
+
+ 	-webkit-flex-wrap: wrap;
+ 	flex-wrap:wrap;
+
+ 	-webkit-justify-content: space-around;
+	justify-content: space-around;
+
+	-webkit-align-items: center;
+	align-content: center;
+}
+.menu-img{
+	width: 135px;
+	height: 115px;
+}
+
+/*------- Bottom Nav --------------------------------*/
+
+ .bottomnav-parent{
+ 	width: 90%;
+ 	margin-top: 5px;
+ 	margin-bottom: 35px;
+
+ 	/* flex properties */
+ 	display: -webkit-flex;
+ 	display: flex;
+
+ 	-webkit-flex-direction: row;
+ 	flex-direction: row;
+
+ 	-webkit-flex-wrap: wrap;
+ 	flex-wrap:wrap;
+
+ 	-webkit-justify-content: center;
+	justify-content: center;
+
+	-webkit-align-items: center;
+	align-content: center;
+ }
+ .bottomnav-child{
+ 	margin-right: 5px;
+ }
+ .arrow{
+ 	width: 13%;
+ }
+ .nav-cupcake{
+ 	width: 13%;
+ }
+ .nav-quote{
+ 	width: 45%;
+ }
+  .menu-left{
+ 	cursor: pointer;
+ }
+  .menu-right{
+ 	cursor: pointer;
+ }
+ /*------- Weapons --------------------------------*/
+
+#w-layout{
+	width: 100%;
+
+	/* flex properties */
+ 	display: -webkit-flex;
+ 	display: flex;
+ 	
+ 	-webkit-flex-direction: row;
+ 	flex-direction: row;
+
+ 	-webkit-flex-wrap: wrap;
+ 	flex-wrap:wrap;
+
+ 	-webkit-justify-content: center;
+	justify-content: center;
+
+	-webkit-align-items: center;
+	align-content: center;
+
+}
+
+#w-label{
+	width: 80%;
+	background-color: #fff;
+	border-bottom: 5px solid #3ab2d9;
+	border-radius: 25px;
+	margin-bottom: 10px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+#w-label h1{
+	display: block;
+	text-align: center;
+	font-weight: normal;
+	margin:5px;
+}
+
+.weapon-img{
+	max-width: 100%;
+	margin-bottom: 15px;
+	margin-top: 100px;
+}
+
+ #weapon-nav{
+ 	width: 100%;
+ 	margin-bottom: 130px;
+
+ 	/* flex properties */
+ 	display: -webkit-flex;
+ 	display: flex;
+ 	
+ 	-webkit-flex-direction: row;
+ 	flex-direction: row;
+
+ 	-webkit-flex-wrap: wrap;
+ 	flex-wrap:wrap;
+
+ 	-webkit-justify-content: center;
+	justify-content: center;
+
+	-webkit-align-items: center;
+	align-content: center;
+ }
+ .back-btn{
+ 	width: 100%;
+ }
+ .repeat-btn{
+ 	width: 100%;
+ 	cursor: pointer;
+ }
+ .a-nav{
+ 	width: 30%;
+ 	margin-right: 5px;
+ }
+ .b-nav{
+ 	width: 50%;
+ }
+
+
+
+@media only screen  and (min-width : 600px) {
+	.choose-weapon{
+		width: 500px;
+		margin-top: 10px;
+	}
+	.weapon-img{
+		max-width: 500px;
+	}
+	#w-label{
+		max-width: 500px;
+	}
+	#weapon-nav{
+	 	max-width: 625px;
+	}
+	 .bottomnav-parent{
+ 		width: 60%;
+ 		margin-top: 30px;
+ 		margin-bottom: 15px;
+ 	}
+}
+
+@media only screen  and (max-width : 480px) {
+	.menu-parent{
+		margin-top: 15px;
+	}
+	.choose-weapon{
+		width: 90%;
+		margin-bottom: 10px;
+	}
+	.bottomnav-parent{
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+
+}
+
+@media only screen  and (max-width : 400px) {
+	.choose-weapon{
+		margin-top: 20px;
+	}
+	.menu-img{
+		width: 130px;
+		height: auto;
+	}
+}

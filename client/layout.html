@@ -1,0 +1,34 @@
+<head>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>Children's Guide To Weapons</title>
+	  <script src="/howler.js-master/howler.js"></script>
+  <script src="/howler.js-master/howler.min.js"></script>
+</head>
+<template name ="ApplicationLayout">
+
+
+
+
+
+<div class="wrapper">
+	{{#transitioner}}
+		{{> yield}}
+	{{/transitioner}}
+</div>
+  <script>
+  document.getElementById("one").addEventListener("touchend", function(){
+		 event.preventDefault();
+		
+    var context = Howler.ctx;
+    var oscillator = context.createOscillator();
+    oscillator.frequency.value = 200;
+    oscillator.connect(context.destination);
+    oscillator.start(0);
+    oscillator.stop(0);
+
+
+		alert("okay");
+	}, false);
+
+  </script>
+</template>

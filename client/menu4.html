@@ -1,0 +1,25 @@
+<template name="menu4">
+	<div class="container master-flex">
+		<header>
+			<img class="choose-weapon" src="/Choose Your Weapon-01.png">
+		</header>
+		<!-- row 1 -->
+		<div class="menu-parent">
+			<a class="menu-child" href="{{pathFor route='f15'}}"><img class="menu-img" src="/menu-weapons/menu4-01.png"/></a>
+			
+			<a class="menu-child" href="{{pathFor route='fgm'}}"><img class="menu-img" src="/menu-weapons/menu4-02.png"/></a>
+			<!-- row 2 -->
+			<a class="menu-child" href="{{pathFor route='dsr'}}"><img class="menu-img" src="/menu-weapons/menu4-03.png"/></a>
+			
+			<a class="menu-child" href="{{pathFor route='paveway'}}"><img class="menu-img" src="/menu-weapons/menu4-04.png"/></a>
+			<!-- row 3 -->
+			<a class="menu-child" href="{{pathFor route='mk48'}}"><img class="menu-img" src="/menu-weapons/menu4-05.png"/></a>
+
+			<a class="menu-child" href="{{pathFor route='activeDenial'}}"><img class="menu-img" src="/menu-weapons/menu4-06.png"/></a>
+		</div><!-- end of menu-parent -->
+
+		<!-- footer items -->	
+		{{> bottomNav}}
+
+	</div>
+</template>
